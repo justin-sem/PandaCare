@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PandaCalm.PandaCalm">
+
+    <!--include the action bar-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!-- unclickable button for design purpose -->
+    <Button
+        android:id="@+id/pandaCalmButton"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_transparent_button"
+        android:clickable="false"
+        android:fontFamily="@font/poppins"
+        android:paddingBottom="35dp"
+        android:text="Timer"
+        android:textAllCaps="false"
+        android:textColor="#1F4F4F"
+        android:textStyle="bold"
+        app:backgroundTint="#1AFFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaCalmTextView" />
+
+    <!--panda calm title text view-->
+    <TextView
+        android:id="@+id/pandaCalmMainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="PandaCalm"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#174C4F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <!--panda calm description text view-->
+    <TextView
+        android:id="@+id/pandaCalmTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Set your preferred timer and a calm music will be played !"
+        android:textColor="#174C4F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaCalmMainTextView" />
+
+    <!--panda calm image view logo-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="292dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaCalmButton"
+        app:srcCompat="@drawable/red_panda_calm_icon" />
+
+    <!--here using relative layout for seekbar and text inside of it-->
+    <RelativeLayout
+        android:layout_width="389dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--seek bar for setting the timer-->
+        <SeekBar
+            android:id="@+id/timerSeekBar"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp" />
+
+        <!--minute text-->
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="50dp"
+            android:text="5 mins"
+            android:textSize="10sp" />
+
+        <!--minute text-->
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="50dp"
+            android:text="10 mins"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <!--timer text view-->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="118dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/playMusicButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--play music button-->
+    <Button
+        android:id="@+id/playMusicButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_transparent_button"
+        android:fontFamily="@font/poppins"
+        android:onClick="playButtonClicked"
+        android:text="Play Music"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".PandaLove.PandaLove">
+
+    <!--include the action bar-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!--panda love title text view-->
+    <TextView
+        android:id="@+id/pandaLoveMainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins"
+        android:text="PandaLove"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#174C4F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--panda love description text view-->
+    <TextView
+        android:id="@+id/pandaLoveTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/pandaLoveMainTextView"
+        android:fontFamily="@font/poppins"
+        android:text="You can set up the bad habits which you trying to overcome, and PandaCare will send you a notification everyday to alert you ! "
+        android:textColor="#174C4F"
+        android:textSize="14sp" />
+
+    <!--recycler view to display the schedule list-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/habitListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pandaLoveTextView"
+        android:layout_above="@+id/habitAdd"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <!--button to add new schedule-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/habitAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="#F5E9BE"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>

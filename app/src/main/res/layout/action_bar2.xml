@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#207178">
+
+    <!-- relative layout is used to create the action bar at the remaining function pages-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- app image icon  -->
+        <ImageView
+            android:id="@+id/mainIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/red_panda_main" />
+
+        <!-- app title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/cardo"
+            android:text="PandaCare"
+            android:textColor="#F5E9BE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

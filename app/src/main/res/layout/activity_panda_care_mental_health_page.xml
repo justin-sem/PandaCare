@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PandaCareMentalHealthPage">
+
+    <!--include the action bar-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!--button lead to panda chat-->
+    <Button
+        android:id="@+id/pandaChatButton"
+        android:layout_width="303dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_gradient_background"
+        android:paddingLeft="60dp"
+        android:stateListAnimator="@null"
+        android:text="PandaChat"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentalHealthTextView" />
+
+    <!--button lead to panda calm-->
+    <Button
+        android:id="@+id/pandaCalmButton"
+        android:layout_width="303dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_gradient_background"
+        android:paddingLeft="60dp"
+        android:stateListAnimator="@null"
+        android:text="PandaCalm"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaChatButton" />
+
+    <!--button lead to panda guide-->
+    <Button
+        android:id="@+id/pandaGuideButton"
+        android:layout_width="303dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_gradient_background"
+        android:paddingLeft="60dp"
+        android:stateListAnimator="@null"
+        android:text="PandaGuide"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaCalmButton" />
+
+    <!--pandacare mental health main title-->
+    <TextView
+        android:id="@+id/mentalHealthMainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="PandaCare Mental Health"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#174C4F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <!--pandacare mental health text description-->
+    <TextView
+        android:id="@+id/mentalHealthTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Here, PandaCare aims to provide supports to our users in terms of their Mental Health"
+        android:textColor="#174C4F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentalHealthMainTextView" />
+
+    <!--here use relative layout to insert the image logo-->
+    <RelativeLayout
+        android:layout_width="388dp"
+        android:layout_height="540dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentalHealthTextView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/panda_chat" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="200dp"
+            app:srcCompat="@drawable/panda_calm" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="350dp"
+            app:srcCompat="@drawable/panda_guide" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

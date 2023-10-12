@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".PandaLove.NewHabitActivity">
+
+    <!--include the action bar-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!--edit text for bad habit -->
+    <EditText
+        android:id="@+id/badHabitET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#174C4F"
+        android:hint="Enter Your Bad Habit" />
+
+
+    <!--save schedule button-->
+    <Button
+        android:id="@+id/saveHabit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_transparent_button"
+        android:padding="10dp"
+        android:text="Save Habit"
+        android:textAllCaps="false"
+        android:textColor="#174C4F"
+        app:backgroundTint="#FFFFFF" />
+
+</LinearLayout>

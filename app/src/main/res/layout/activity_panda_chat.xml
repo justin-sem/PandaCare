@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PandaChat.PandaChat">
+
+    <!--include the action bar-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!--panda chat title text view-->
+    <TextView
+        android:id="@+id/pandaChatMainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="PandaChat"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#174C4F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--panda chat description text view-->
+    <TextView
+        android:id="@+id/pandaChatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pandaChatMainTextView"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Start chatting with our virtual Panda now!"
+        android:textColor="#174C4F"
+        android:textSize="14sp" />
+
+    <!--recycler view to display our chats-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVChats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idLLMessage"
+        android:layout_below="@id/pandaChatTextView"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/round_transparent_button" />
+
+    <LinearLayout
+        android:id="@+id/idLLMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <!--edit text to enter message-->
+        <EditText
+            android:id="@+id/idEdtMessage"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:backgroundTint="#F5E9BE"
+            android:hint="Start Chatting!"
+            android:textAlignment="textStart" />
+
+        <!--button to send message-->
+        <ImageButton
+            android:id="@+id/idIBSend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/round_transparent_button"
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="#FF835D"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</RelativeLayout>

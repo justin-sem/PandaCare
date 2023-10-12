@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".PandaGuide">
+
+    <!--include the action bar-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!--button leads to website-->
+    <Button
+        android:id="@+id/guideOneButton"
+        android:layout_width="303dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_transparent_button"
+        android:onClick="guideOneButtonClicked"
+        android:stateListAnimator="@null"
+        android:text="World Health Organisation"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1AFFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaGuideText" />
+
+    <!--button leads to website-->
+    <Button
+        android:id="@+id/guideTwoButton"
+        android:layout_width="303dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_transparent_button"
+        android:onClick="guideTwoButtonClicked"
+        android:stateListAnimator="@null"
+        android:text="Malaysian Mental Health Association"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1AFFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideOneButton" />
+
+    <!--button leads to website-->
+    <Button
+        android:id="@+id/guideThreeButton"
+        android:layout_width="303dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_transparent_button"
+        android:onClick="guideThreeButtonClicked"
+        android:stateListAnimator="@null"
+        android:text="Befrienders"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1AFFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideTwoButton" />
+
+    <!--panda guide title text view-->
+    <TextView
+        android:id="@+id/pandaGuideMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:text="PandaGuide"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#174C4F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <!--panda guide description text view-->
+    <TextView
+        android:id="@+id/pandaGuideText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="You can view and read about guidance on how to deal with mental health issue from their website !"
+        android:textColor="#174C4F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaGuideMainText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

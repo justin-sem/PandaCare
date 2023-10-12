@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".PandaFit.NewFitScheduleActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar2" />
+
+    <!--edit text for schedule date-->
+
+    <EditText
+        android:id="@+id/scheduleDateET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#174C4F"
+        android:hint="Enter Your Schedule Date" />
+
+    <!--edit text for schedule time-->
+    <EditText
+        android:id="@+id/scheduleTimeET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#174C4F"
+        android:hint="Enter Your Schedule Time" />
+
+    <!--edit text for schedule plan-->
+    <EditText
+        android:id="@+id/schedulePlanET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#174C4F"
+        android:hint="Enter Your Schedule Plan" />
+
+    <!--save schedule button-->
+    <Button
+        android:id="@+id/saveSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_transparent_button"
+        android:padding="10dp"
+        android:text="Save Schedule"
+        android:textAllCaps="false"
+        android:textColor="#FF9666"
+        app:backgroundTint="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_gradient_background"
+    tools:context=".PandaCareAccount.PandaCareRegister">
+
+    <!--pandacare main logo-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="173dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red_panda_main" />
+
+    <!--pandacare main title-->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="141dp"
+        android:fontFamily="@font/cardo"
+        android:text="PandaCare"
+        android:textColor="#F5E9BE"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <!--pandacare username edit text-->
+    <EditText
+        android:id="@+id/usernameRegisterInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#65FFFFFF"
+        android:backgroundTint="#F5E9BE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <!--pandacare password edit text-->
+    <EditText
+        android:id="@+id/passwordRegisterInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#66FFFFFF"
+        android:backgroundTint="#F5E9BE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegisterInput" />
+
+    <!--pandacare name edit text-->
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="enter name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#66FFFFFF"
+        android:backgroundTint="#F5E9BE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterInput" />
+
+    <!--pandacare register button-->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="registerClicked"
+        android:text="Register"
+        app:backgroundTint="#99FFFFFF"
+        android:background="@drawable/round_transparent_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>
