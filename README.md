@@ -1,1 +1,3 @@
-# PandaCare
+# PandaCare - Android Software Application
+
+Introducing, *PandaCare*, where a cute virtual red panda is responsible to take care of human well-being. It is an Android application software which aims to tackle human health and mental health issue. PandaCare has two main components with different functionality, where the first component focuses on health. In Health, PandaCare focus on three main scopes, which are healthy diet (PandaDiet), exercising (Panda-Fit) and bad habits correction (PandaLove) whereas in the Mental Health component, features such as AI Chatbox (PandaChat), timer and music (PandaCalm), and mental health guidance (PandaGuide) will be developed.
