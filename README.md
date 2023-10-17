@@ -64,7 +64,7 @@ In *PandaCare Mental Health*, users can chat with our adorable virtual Panda, an
 
 
 
-*This project is intended for the purpose of COMP 3040 at the University of Nottingham only*
+*This project is only intended for the purpose of COMP 3040 at the University of Nottingham*
 
 
 
