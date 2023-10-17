@@ -42,7 +42,7 @@ In *PandaCare Health*, users can maintain their diet, creates exercise plan and 
  Panda Diet, Panda-Fit & Panda Love
 </p>
 
-In *PandaCare Mental Health*, users can chat with our cute virtual Panda, and listen to calm music which aims to help to get into sleep. Last but not least, PandaCare provides information which enables users to seek extra help. 
+In *PandaCare Mental Health*, users can chat with our adorable virtual Panda, and listen to soothing music aimed at helping them fall asleep, last but not least, access information that enables them to seek additional help. 
 
 <p align="middle">                                                                                                                              
  <img align="top" src = "https://github.com/justin-sem/PandaCare/assets/93218385/3a271a3b-2f19-4595-85ae-287201080c30" width="200" height="350 ">
